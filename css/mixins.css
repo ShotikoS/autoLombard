@@ -1,0 +1,51 @@
+@-webkit-keyframes reclamBaner {
+  0% {
+    color: #fab113;
+  }
+  25% {
+    -webkit-transform: translate(-50%, -350%);
+            transform: translate(-50%, -350%);
+    color: darkblue;
+  }
+  50% {
+    color: brown;
+    -webkit-transform: translate(50%, -350%);
+            transform: translate(50%, -350%);
+  }
+  75% {
+    color: chartreuse;
+    -webkit-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+  }
+  100% {
+    color: darkblue;
+    -webkit-transform: translate(50%, 0%);
+            transform: translate(50%, 0%);
+  }
+}
+@keyframes reclamBaner {
+  0% {
+    color: #fab113;
+  }
+  25% {
+    -webkit-transform: translate(-50%, -350%);
+            transform: translate(-50%, -350%);
+    color: darkblue;
+  }
+  50% {
+    color: brown;
+    -webkit-transform: translate(50%, -350%);
+            transform: translate(50%, -350%);
+  }
+  75% {
+    color: chartreuse;
+    -webkit-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+  }
+  100% {
+    color: darkblue;
+    -webkit-transform: translate(50%, 0%);
+            transform: translate(50%, 0%);
+  }
+}
+/*# sourceMappingURL=mixins.css.map */

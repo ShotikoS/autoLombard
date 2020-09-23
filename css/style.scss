@@ -1,0 +1,219 @@
+@import './mixins.scss';
+@import './variables.scss';
+
+.headerSection{
+    width: 100%;
+    height: 65px;
+    background-color: $headerColor;
+    position: fixed;
+    z-index: 10000000;
+    .header__content{
+        width: 90%;
+        margin: auto;
+        height: 65px;
+        @include flex;
+    }
+    .logo{
+        width: 150px;
+        cursor: pointer;
+        &:hover{
+            transform: scale(1.1);
+            transition: 0.5s;
+        }
+    }
+    .ContactIfro__container{
+        @include flex;
+    }
+    .OfficeAddress{
+        @include flex;
+        color: #ea4335;
+        font-size: 20px;
+        margin-right: 20px;
+    }
+    .address{
+        color: white;
+        padding-left: 7px;
+        font-size: 16px;
+    }
+    .officeNumber__container{
+        @include flex;
+        color: rgb(21, 255, 0);
+    }
+    .Number{
+        color: white;
+        padding-left: 7px;
+    }
+}
+.Slideshow__container{
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+    padding-top: 65px;
+    .NextPrev__btns{
+        width: 100%;
+        height: 550px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .prev{
+        margin-left: 20px;
+        @include buttons;
+    }
+    .next{
+        margin-right: 20px;
+        @include buttons;
+    }
+    .SlideShow__content{
+        display: flex;
+        width: fit-content;
+    }
+    .SlideShow__content li{
+        display: flex;
+        flex-shrink: 0;
+        justify-content: center;
+        align-items: flex-end;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 550px;
+        p{
+            font-size: 35px;
+            text-align: center;
+            font-weight: bold;
+            color: white;
+            background-color: rgb(11, 11, 49);
+            opacity: 0.7;
+            width: 100%;
+            padding: 10px 0px;
+        }
+    }
+}
+.Animation__container{
+    width: 100%;
+    height: 320px;
+    margin: auto;
+    display: flex;
+    align-items: flex-end;
+    .animationContent{
+        width: 70%;
+        height: 200px;
+        background-color: #c6c3bc;
+        margin: auto;
+        background-image: url("../images/giphy.gif");
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        p{
+            font-size: 32px;
+            font-weight: bold;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+            background-color: rgb(11, 11, 49);
+            opacity: 0.7;
+            color: white;
+        }
+        .active{
+            display: block;
+        }
+    }
+    
+}
+.Calculator__Title{
+    width: 70%;
+    margin: auto;
+    margin-top: 40px;
+    font-size: 23px;
+    font-weight: bold;
+}
+.Calculator__Container{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 70px;
+    align-items: center;
+    justify-content: center;
+    .calculatorContent{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: 2px solid rgb(209, 209, 209);
+        padding: 30px 70px;
+        border-radius: 10px;
+    }
+    #LoanAmount{
+        width: 100%;
+        height: 30px;
+        cursor: pointer;
+    }
+    #LoanTerm{
+        width: 100%;
+        cursor: pointer;
+        height: 30px;
+    }
+    .termBox, .cash{
+        border: 3px gray solid;
+        width: 110px;
+        height: 40px;
+        display: flex;
+        font-size: 20px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        font-weight: bold;
+    }
+    .LoanAmountText, .Term{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+    }
+    .PayInEveryMonth, .FirstPay{
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 40px;
+    }
+}
+.MapSection{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    margin-top: 150px;
+    justify-content: center;
+    .GoogleMap{
+        height: 60vh;
+        width: 90%;
+    }
+}
+.footer__Container{
+    width: 100%;
+    margin-top: 80px;
+    height: 85px;
+    background-color: rgb(34, 22, 22);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .FooterText{
+        color: white;
+        text-align: center;
+        color: rgb(218, 218, 218);
+        cursor: default;
+        padding-bottom: 15px;
+    }
+    img{
+        border-radius: 8px;
+    }
+}

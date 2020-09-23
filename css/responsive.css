@@ -1,0 +1,49 @@
+@media (max-width: 640px) {
+  .SlideShow__content li p {
+    font-size: 20px !important;
+    line-height: 40px !important;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .Slideshow__container, .NextPrev__btns, .SlideShow__content li {
+    height: 350px !important;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+  }
+  .animationContent {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .calculatorContent {
+    width: 80% !important;
+    padding: 30px 50px !important;
+  }
+  .Calculator__Container {
+    width: 95% !important;
+    margin: auto;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 572px) {
+  .Number, .address {
+    display: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .PayInEveryMonth, .FirstPay {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 1140px) {
+  .AnimationText {
+    font-size: 20px !important;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

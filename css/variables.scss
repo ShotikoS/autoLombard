@@ -1,0 +1,9 @@
+$headerColor: rgb(1, 7, 39);
+$buttonColor: rgb(250, 177, 19);
+@keyframes reclamBaner{
+    0% {color: rgb(250, 177, 19);}
+    25% {transform: translate(-50%, -350%); color: darkblue;}
+    50% {color: brown; transform: translate(50%, -350%);}
+    75% {color: chartreuse; transform: translate(-50%, 0%);}
+    100% {color: darkblue; transform: translate(50%, 0%);}
+}

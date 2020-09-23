@@ -1,0 +1,25 @@
+@import './variables.scss';
+
+@mixin flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin buttons {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    color: white;
+    border-radius: 50%;
+    background-color: $buttonColor;
+    border: $buttonColor 1px solid;
+    &:hover{
+        transition: 0.7s;
+        transform: scale(1.2);
+        cursor: pointer;
+        box-shadow: 0px 0px 15px 10px $buttonColor;
+    }
+}
